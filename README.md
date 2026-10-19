@@ -1,2 +1,2 @@
-# Unified-harmonics
+# Unified-harmonics field equations
 Unified harmonic formula
