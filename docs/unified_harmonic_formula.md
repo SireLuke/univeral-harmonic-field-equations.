@@ -132,7 +132,7 @@ Used for:
 - planetary data visualization  
 - multi‑regime coherence mapping  
 
-This is a mathematical transform, not a physical portal.
+This is a mathematical transform 
 
 SECTION 4 — MATRIX DEFINITIONS
 
