@@ -1,6 +1,8 @@
-UNIFIED HARMONIC FIELD SPECIFICATION (v1.0‑RC)
+UNIFIED HARMONIC FIELD SPECIFICATION
 
-PANoRAMic.os Core Mathematical Engine
+PANoRAMic.os — Core Mathematical Engine
+
+Version 1.0‑RC
 
 ---
 
@@ -40,12 +42,12 @@ SECTION 1 — EXPANSIVE REGIME (∫ dt)
 
 Time‑dependent harmonic evolution
 
----
-
 1. Core Resonance Index — Rc(t)
 `
 Rc(t) = ∫₀ᵗ (E_F / φⁿ) · ψ(t) dt
 `
+Meaning: Measures constructive interference, stability, and systemic health.  
+Impact: High Rc = strong homeostasis, synchronized feedback, stable planetary behavior.
 
 ---
 
@@ -53,6 +55,8 @@ Rc(t) = ∫₀ᵗ (E_F / φⁿ) · ψ(t) dt
 `
 Sc(t) = ∫₀ᵗ (E_F / φ⁻ⁿ) · χ(t) dt
 `
+Meaning: Quantifies entropy, friction, instability, and runaway divergence.  
+Impact: High Sc = inflation, resource hoarding, ecological stress, infrastructure strain.
 
 ---
 
@@ -60,6 +64,8 @@ Sc(t) = ∫₀ᵗ (E_F / φ⁻ⁿ) · χ(t) dt
 `
 Cc(t) = ∫₀ᵗ (E_F / φᴰ) · ω(t) dt     where D < 0
 `
+Meaning: Represents stochastic noise and decoherence.  
+Impact: High Cc = unpredictable behavior, destabilized feedback, loss of signal clarity.
 
 ---
 
@@ -67,19 +73,17 @@ Cc(t) = ∫₀ᵗ (E_F / φᴰ) · ω(t) dt     where D < 0
 `
 Hc(t) = ∫₀ᵗ (EF · Ld / Φᵐ) · ζ(t) dt
 `
-
----
-
-SECTION 2 — INVERTED REGIME (∮ dΩ)
+Meaning: Models hyper‑coherent stability and long‑term structural integrity.  
+Impact: High Hc = strong infrastructure, low degradation, predictable long‑term behavior.SECTION 2 — INVERTED REGIME (∮ dΩ)
 
 Static geometry, boundary collapse, 0‑dimensional junction modeling
-
----
 
 5. Master Inverted Singularity Matrix — Γ
 `
 Γ = ∮∂Ω EF · Minv · W(x, τ) dΩ
 `
+Meaning: Static geometric mapping of system state across a closed boundary.  
+Impact: Enables zero‑latency coordinate mapping, multi‑scale visualization, audit compression.
 
 M_inv definition
 `
@@ -88,10 +92,12 @@ M_inv = diag( φⁿ , φ⁻ⁿ , φ⁻ᴰ , Φᵐ )
 
 ---
 
-6. Transverse Chiral White Hole Form — Ψwhitehole
+6. Transverse Chiral White Hole Form — Ψ_whitehole
 `
-Ψwhitehole = Σₖ ∮∂Ω (EF / (Fk · Φᵐ)) · J_L · ζ(x, τ) dΩ
+Ψwhitehole = Σₖ ∮∂Ω (EF / (Fk · Φᵐ)) · JL · ζ(x, τ) dΩ
 `
+Meaning: Structured expansion operator using Fibonacci scaling and chiral rotation.  
+Impact: Governs resource distribution, fractal growth, expansion modeling, market flow stabilization.
 
 ---
 
@@ -99,6 +105,8 @@ M_inv = diag( φⁿ , φ⁻ⁿ , φ⁻ᴰ , Φᵐ )
 `
 W_personalized = (Θₚ · Δμ) · W(x, τ)
 `
+Meaning: Integrates human cognitive variability into system state mapping.  
+Impact: Enables adaptive workforce rotation, cognitive load balancing, personalized dashboards.
 
 ---
 
@@ -106,13 +114,10 @@ W_personalized = (Θₚ · Δμ) · W(x, τ)
 `
 Θₚ · Θₚ⁻¹ = I
 `
+Meaning: Identity reintegration and recovery from chaotic displacement.  
+Impact: Used for burnout recovery modeling, psychological load balancing, identity stabilization.SECTION 3 — 0 → ∞ DIMENSIONAL MANIFOLD 
 
----
-
-SECTION 3 — 0 → ∞ DIMENSIONAL MANIFOLD (CONCEPTUAL MODEL)
-
-Mathematical compression layer used for multi‑scale rendering
-
+SECTION 3 — 0 → ∞ DIMENSIONAL MANIFOLD
 A “0D hallway” is treated as:
 
 - a zero‑volume coordinate collapse  
@@ -120,14 +125,14 @@ A “0D hallway” is treated as:
 - a tensor‑compatible compression point  
 - a multi‑scale harmonic mapping node  
 
-Not a physical portal — a mathematical transform for:
+Used for:
 
 - harmonic compression  
 - tensor network synchronization  
 - planetary data visualization  
-- multi‑regime coherence mapping
+- multi‑regime coherence mapping  
 
----
+This is a mathematical transform, not a physical portal.
 
 SECTION 4 — MATRIX DEFINITIONS
 
@@ -150,13 +155,13 @@ J_L = left-handed chiral operator
 
 SECTION 5 — FORMULA INPUT SUMMARY
 
-| Formula | Inputs |
-|--------|--------|
-| Rc(t) | E_F, φ, n, ψ(t) |
-| Sc(t) | E_F, φ, n, χ(t) |
-| Cc(t) | E_F, φ, D, ω(t) |
-| Hc(t) | EF, Ld, Φ, m, ζ(t) |
-| Γ | EF, Minv, W(x, τ), ∂Ω |
-| Ψwhitehole | EF, Fk, Φ, m, J_L, ζ(x, τ), ∂Ω |
-| W_personalized | Θₚ, Δμ, W(x, τ) |
-| Θₚ⁻¹ | Θₚ |
+| Formula        | Inputs                               |
+|----------------|--------------------------------------|
+| Rc(t)          | E_F, φ, n, ψ(t)                      |
+| Sc(t)          | E_F, φ, n, χ(t)                      |
+| Cc(t)          | E_F, φ, D, ω(t)                      |
+| Hc(t)          | EF, Ld, Φ, m, ζ(t)                 |
+| Γ              | EF, Minv, W(x, τ), ∂Ω              |
+| Ψwhitehole    | EF, Fk, Φ, m, JL, ζ(x, τ), ∂Ω     |
+| W_personalized | Θₚ, Δμ, W(x, τ)                      |
+| Θₚ⁻¹           | Θₚ                                   |
