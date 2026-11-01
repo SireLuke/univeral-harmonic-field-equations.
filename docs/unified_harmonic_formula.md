@@ -46,7 +46,7 @@ Use \(\mathcal H_8\) for the unit 8D cross-polytope:
 \mathcal H_8=\{q\in\mathbb R^8:\sum_{i=1}^8|q_i|\le1\},
 \qquad \operatorname{vertices}(\mathcal H_8)=\{\pm e_i\}_{i=1}^8.
 \]
-This is an 8D cross-polytope (hyperoctahedron), not the \(E_8\) root/lattice system. They may be related by a separately specified projection or mapping, but must not be conflated.
+This is an 8D cross-polytope (hyperoctahedron), not the E₈ root/lattice system. They may be related by the explicit, versioned maps in [Cross-Polytope ↔ E₈ Lattice Mapping Contract](cross_polytope_e8_mapping.md), but must not be conflated.
 
 ## 3. UHFE: formation / constructive field
 
