@@ -7,6 +7,7 @@ This repository defines the proposed mathematical/software contract for the PAN 
 - **[Canonical V8 / UHFE / UDFE specification](docs/unified_harmonic_formula.md)** — canonical coordinate meanings, proposed five-head mappings, paired merge equations, Fermi occupancy/hole diagnostics, alternating phase-pulse scaffold, legacy operators, and conformance tests.
 - **[Proposed UHFE–UDFE merge model](docs/uhfe_udfe_merge_model.md)** — concise reference for the paired fields and aggregation rules.
 - **[V8 contract](docs/v8_contract.md)** — machine-facing domain and validation contract.
+- **[Cross-Polytope ↔ E₈ Lattice Mapping Contract](docs/cross_polytope_e8_mapping.md)** — explicit definitions, lattice membership, root system, normalization, quantization, residuals, and mapping tests.
 
 ## Core model
 
