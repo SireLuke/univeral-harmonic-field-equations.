@@ -1,0 +1,25 @@
+name: Branch A classical harmonics
+
+on:
+  push:
+    branches:
+      - feat/branch-a-classical-harmonics
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  classical-harmonics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run Branch A conformance tests
+        env:
+          PYTHONPATH: src
+        run: python -m unittest discover -s tests -v
