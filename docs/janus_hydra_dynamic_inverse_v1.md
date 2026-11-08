@@ -50,4 +50,4 @@ These establish **implementation conformance to the stated algebra**. They do no
 
 ## 6. Open naming item (needs the owner's decision)
 
-This repository expands UDFE as "Universal **Dissolution** Field Equation"; other project documents (including the FGHCL foundation and the V8 spec wording) say "Universal **Decoherence** Field Equation". This document does not choose; it should be reconciled in one place.
+The name of UDFE is not consistent across the project's own documents. This repository expands it as "Universal **Dissolution** Field Equation". `FGHCL_foundation.md` says "Universal **Decoherence** Field Equation", while the FGHCL `README.md` calls UHFE/UDFE "paired formation and **dissolution** representations". The V8 coordinate `d` is described as a "decoherence / entropy indicator" throughout. No formula depends on the word. This document does not choose; it should be settled in one place, and if "Decoherence" is kept it should be stated that `d` is a model coordinate, not quantum decoherence.
