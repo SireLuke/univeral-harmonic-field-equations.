@@ -1,6 +1,6 @@
 # Universal Harmonic Field Equations (UHFE/UDFE)
 
-This repository defines the proposed mathematical/software contract for the PAN V8 Universal Harmonic Field Equations (UHFE), Universal Dissolution Field Equations (UDFE), and their coupled formation–dissolution model.
+This repository defines the proposed mathematical/software contract for the PAN V8 Universal Harmonic Field Equations (UHFE), Universal Decoherence Field Equations (UDFE), and their coupled formation–decoherence model.
 
 ## Start here
 
@@ -18,7 +18,7 @@ This repository defines the proposed mathematical/software contract for the PAN 
 V_8=(h,R,u,d,\tau,\chi,s,f)
 \]
 
-UHFE represents the constructive/formation channel; UDFE represents the dissolution/inverse channel. They are evaluated on the same eight-dimensional state/domain and remain separately observable. The proposed merge preserves both values and derives:
+UHFE represents the constructive/formation channel; UDFE represents the decoherence/inverse channel. They are evaluated on the same eight-dimensional state/domain and remain separately observable. The proposed merge preserves both values and derives:
 
 \[
 J_i=H_i+D_i,\qquad \Delta_i=H_i-D_i.

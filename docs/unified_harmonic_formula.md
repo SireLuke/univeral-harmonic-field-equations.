@@ -2,7 +2,7 @@
 
 **Status:** Proposed mathematical/software specification (not a validated physical theory)  
 **Version:** 1.1-draft  
-**Purpose:** Define one reproducible contract for the Universal Harmonic Field Equations (UHFE), Universal Dissolution Field Equations (UDFE), their paired/merged representation, and their interface to the PAN V8 state.
+**Purpose:** Define one reproducible contract for the Universal Harmonic Field Equations (UHFE), Universal Decoherence Field Equations (UDFE), their paired/merged representation, and their interface to the PAN V8 state.
 
 > This document separates canonical state definitions, proposed numerical operators, and physical interpretations that remain hypotheses. An equation being implemented or tested numerically does not establish that it describes a physical field.
 
@@ -66,9 +66,9 @@ Here \(\tau_{01}\) is a normalized temporal coordinate derived from a declared r
 
 For these arithmetic means to be valid, every input to a head must be dimensionless and normalized to \([0,1]\). The scores therefore remain in \([0,1]\). If any input is absent or invalid, the head returns a validation error rather than silently treating it as zero.
 
-## 4. UDFE: dissolution / inverse field
+## 4. UDFE: decoherence / inverse field
 
-UDFE is the dissolution, complement, cavitation, or inverse side. It is coupled to UHFE over the same V8 state and geometry; it is not a separate eight-dimensional space.
+UDFE is the decoherence, complement, cavitation, or inverse side. It is coupled to UHFE over the same V8 state and geometry; it is not a separate eight-dimensional space.
 
 The following head pairings are the current proposed mapping. The exact physical interpretation of each score is provisional.
 
@@ -82,17 +82,17 @@ The following head pairings are the current proposed mapping. The exact physical
 
 All UDFE heads above return scores in \([0,1]\) when their inputs satisfy the stated domains. These are proposed software definitions to make the current model computable and testable. They should be versioned rather than silently altered if later experiments support a different mapping.
 
-Notice that the inverse heads are not all simple \(1-H\) complements: the AntiBubble and Discrete-singular-dots proposals explicitly use decoherence \(d\) as a positive dissolution signal. This is intentional in the current proposal.
+Notice that the inverse heads are not all simple \(1-H\) complements: the AntiBubble and Discrete-singular-dots proposals explicitly use decoherence \(d\) as a positive inverse-side signal. This is intentional in the current proposal.
 
 ## 5. Coupled UHFE/UDFE merge
 
-Keep the formation and dissolution channels separately observable, then derive shared summaries. For a matched head pair \(i\):
+Keep the formation and decoherence channels separately observable, then derive shared summaries. For a matched head pair \(i\):
 \[
 J_i=H_i+D_i,\qquad \Delta_i=H_i-D_i.
 \]
 
 - \(J_i\): combined activity / joint magnitude. Its range is \([0,2]\), not automatically \([0,1]\).
-- \(\Delta_i\): signed formation–dissolution imbalance, in \([-1,1]\).
+- \(\Delta_i\): signed formation–decoherence imbalance, in \([-1,1]\).
 - Preserve \((H_i,D_i,J_i,\Delta_i)\) in records; do not collapse the pair to a single value and lose polarity.
 - If a bounded combined score is needed, define \(J_{i,01}=J_i/2\) and label it as a normalization, not the raw sum.
 
