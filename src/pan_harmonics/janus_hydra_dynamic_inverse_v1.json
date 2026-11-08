@@ -1,0 +1,68 @@
+{
+  "spec_id": "JANUS-HYDRA-DYNAMIC-INVERSE-v1",
+  "status": "canonical_v1_baseline",
+  "coordinate_order": [
+    "h",
+    "R",
+    "u",
+    "d",
+    "tau",
+    "chi",
+    "s",
+    "f"
+  ],
+  "coordinate_domain": [
+    0,
+    1
+  ],
+  "pairs": {
+    "bubble": {
+      "inverse": "antibubble_cavitation",
+      "H": "(h+R+u)/3",
+      "D": "(d+(1-u)+(1-h))/3",
+      "delta": "(R+d-1)/3"
+    },
+    "compoundEye": {
+      "inverse": "discretesingulardots_inversecompoundeye",
+      "H": "(s+h+d)/3",
+      "D": "((1-s)+(1-h)+d)/3",
+      "delta": "(2*d-1)/3"
+    },
+    "honeycomb": {
+      "inverse": "inversehoneycomb",
+      "H": "(tau+s)/2",
+      "D": "((1-tau)+(1-s)+d)/3",
+      "delta": "(tau+s+2*d-2)/6"
+    },
+    "spiderweb": {
+      "inverse": "inversespiderweb_radialvoid",
+      "H": "(f+h+R)/3",
+      "D": "((1-f)+(1-h)+(1-R)+d)/4",
+      "delta": "(f+h+R+3*d-3)/12"
+    },
+    "chiralDNA": {
+      "inverse": "chiralvoid",
+      "H": "(chi+tau+R)/3",
+      "D": "((1-chi)+(1-tau)+(1-R)+d)/4",
+      "delta": "(chi+tau+R+3*d-3)/12"
+    }
+  },
+  "v1_1_proposal": {
+    "lambda_domain": "(0,1]",
+    "rule": "Scale only inverse-head density term; formation heads unchanged.",
+    "compatibility": "All lambda_k=1 reproduces v1.",
+    "defects": {
+      "bubble": "(R+lambda_B*d-1)/3",
+      "compoundEye": "((1+lambda_E)*d-1)/3",
+      "honeycomb": "(tau+s+2*lambda_H*d-2)/6",
+      "spiderweb": "(f+h+R+3*lambda_W*d-3)/12",
+      "chiralDNA": "(chi+tau+R+3*lambda_C*d-3)/12"
+    }
+  },
+  "guardrails": [
+    "Janus Hydra is distinct from UHFE and UDFE.",
+    "A nonzero defect is not automatically evidence of a physical phenomenon.",
+    "Store raw and normalized defects separately.",
+    "Experimental calibration must not overwrite canonical v1."
+  ]
+}

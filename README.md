@@ -9,6 +9,9 @@ This repository defines the proposed mathematical/software contract for the PAN 
 - **[V8 contract](docs/v8_contract.md)** — machine-facing domain and validation contract.
 - **[Cross-Polytope ↔ E₈ Lattice Mapping Contract](docs/cross_polytope_e8_mapping.md)** — explicit definitions, lattice membership, root system, normalization, quantization, residuals, and mapping tests.
 
+- **[JANUS-HYDRA-DYNAMIC-INVERSE-v1](docs/janus_hydra_dynamic_inverse_v1.md)** — versioned UDFE inverse-head rule (all five heads carry `d`), exact defects, rank/sensitivity facts, with a stdlib-only reference implementation and tests.
+- **[E₈ / Gosset verified facts](docs/e8_gosset_verified_facts.md)** — computed facts and conventions behind the geometry contract.
+
 ## Core model
 
 \[

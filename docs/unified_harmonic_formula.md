@@ -207,3 +207,8 @@ This specification makes the proposed model more precise and testable. Passing u
 - Version changes to head formulas, score normalization, Fermi sign conventions, phase scheduling, or boundary operators.
 - Keep raw inputs, normalized values, transformations, outputs, and validation status auditable.
 - Never overwrite legacy operators silently; promote them only after tests and an explicit review.
+
+## Addendum A: named alternative UDFE rule (added, nothing above changed)
+
+An alternative inverse-head rule, `JANUS-HYDRA-DYNAMIC-INVERSE-v1`, in which `d` enters all five UDFE heads, is specified in [`janus_hydra_dynamic_inverse_v1.md`](janus_hydra_dynamic_inverse_v1.md) with a conformance-tested reference implementation. Sections 4–5 above are unchanged; implementations must state which UDFE rule they use. Verified E₈/Gosset facts supporting the geometry contract are collected in [`e8_gosset_verified_facts.md`](e8_gosset_verified_facts.md).
+
