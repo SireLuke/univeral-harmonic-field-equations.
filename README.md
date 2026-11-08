@@ -1,6 +1,6 @@
 # Universal Harmonic Field Equations (UHFE/UDFE)
 
-This repository defines the proposed mathematical/software contract for the PAN V8 Universal Harmonic Field Equations (UHFE), Universal Dissolution Field Equations (UDFE), and their coupled formation–dissolution model.
+This repository defines the proposed mathematical/software contract for the PAN V8 Universal Harmonic Field Equations (UHFE), Universal Decoherence Field Equations (UDFE), and their coupled formation–decoherence model.
 
 ## Start here
 
@@ -9,13 +9,16 @@ This repository defines the proposed mathematical/software contract for the PAN 
 - **[V8 contract](docs/v8_contract.md)** — machine-facing domain and validation contract.
 - **[Cross-Polytope ↔ E₈ Lattice Mapping Contract](docs/cross_polytope_e8_mapping.md)** — explicit definitions, lattice membership, root system, normalization, quantization, residuals, and mapping tests.
 
+- **[JANUS-HYDRA-DYNAMIC-INVERSE-v1](docs/janus_hydra_dynamic_inverse_v1.md)** — versioned UDFE inverse-head rule (all five heads carry `d`), exact defects, rank/sensitivity facts, with a stdlib-only reference implementation and tests.
+- **[E₈ / Gosset verified facts](docs/e8_gosset_verified_facts.md)** — computed facts and conventions behind the geometry contract.
+
 ## Core model
 
 \[
 V_8=(h,R,u,d,\tau,\chi,s,f)
 \]
 
-UHFE represents the constructive/formation channel; UDFE represents the dissolution/inverse channel. They are evaluated on the same eight-dimensional state/domain and remain separately observable. The proposed merge preserves both values and derives:
+UHFE represents the constructive/formation channel; UDFE represents the decoherence/inverse channel. They are evaluated on the same eight-dimensional state/domain and remain separately observable. The proposed merge preserves both values and derives:
 
 \[
 J_i=H_i+D_i,\qquad \Delta_i=H_i-D_i.
