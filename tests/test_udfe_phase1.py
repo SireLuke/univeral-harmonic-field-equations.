@@ -49,7 +49,8 @@ class TestUDFE(unittest.TestCase):
             self.assertAlmostEqual(graph.algebraic_connectivity(graph.ring(n)), 2 - 2 * math.cos(2 * math.pi / n), places=9)
             self.assertAlmostEqual(graph.algebraic_connectivity(graph.path(n)), 2 - 2 * math.cos(math.pi / n), places=9)
             self.assertAlmostEqual(graph.algebraic_connectivity(graph.complete(n)), n, places=9)
-        full = graph.grid(4, 4)   # removing edges never increases lambda_2; lam = graph.algebraic_connectivity(full); cur = full
+        full = graph.grid(4, 4)   # removing edges never increases lambda_2
+        lam = graph.algebraic_connectivity(full); cur = full
         for e in full.edges()[:5]:
             cur = cur.remove([e]); l = graph.algebraic_connectivity(cur); self.assertLessEqual(l, lam + 1e-9); lam = l
 
