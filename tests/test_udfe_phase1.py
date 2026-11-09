@@ -1,6 +1,6 @@
 """PAN-UDFE-SPEC-001 acceptance tests UDFE-001..010 (reference level). A test passes only when executed."""
 import math, unittest
-from pan_harmonics.udfe import qubit, graph, dissipation, coupling
+from pan_harmonics.udfe import qubit, graph, dissipation, coupling, constants
 from pan_harmonics.udfe.common import UdfeError
 
 E_GAP = {"value": 1.6e-19, "unit": "J"}
@@ -111,5 +111,20 @@ class TestUDFE(unittest.TestCase):
         g1, g2 = graph.gnp(12, 0.5, seed=3), graph.gnp(12, 0.5, seed=3)
         self.assertEqual(g1.edges(), g2.edges())
         self.assertEqual(graph.evaluate(graph.ring(10), graph.ring(10).remove([(0, 1)])), graph.evaluate(graph.ring(10), graph.ring(10).remove([(0, 1)])))
+
+class ConstantsTests(unittest.TestCase):
+    def test_planck_values_match_published(self):
+        # CODATA 2018 published Planck units (rel tol 1e-5; G-limited)
+        for got, ref in [(constants.L_P,1.616255e-35),(constants.T_P,5.391247e-44),
+                         (constants.M_P,2.176434e-8),(constants.TEMP_P,1.416784e32)]:
+            self.assertAlmostEqual(got/ref, 1.0, delta=1e-5)
+    def test_identities(self):
+        self.assertAlmostEqual(constants.L_P/(constants.C*constants.T_P),1.0,places=12)
+        self.assertAlmostEqual(constants.HBAR*constants.C/constants.G/constants.M_P**2,1.0,places=12)
+    def test_scaling_rejects_bad_input(self):
+        self.assertAlmostEqual(constants.to_planck_time(constants.T_P),1.0,places=12)
+        with self.assertRaises(UdfeError): constants.to_planck_length(0)
+        with self.assertRaises(UdfeError): constants.to_planck_time(float("nan"))
+
 
 if __name__ == "__main__": unittest.main()
